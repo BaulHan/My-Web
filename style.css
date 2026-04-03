@@ -117,3 +117,38 @@ h2 { color: var(--dark-blue); border-bottom: 2px solid #ddd; padding-bottom: 10p
     .hero h1 { font-size: 2rem; }
     .contact-box { width: 90%; }
 }
+
+/* 핵심 역량(Skills) 디자인 */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: var(--dark-blue);
+}
+
+.skill-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
