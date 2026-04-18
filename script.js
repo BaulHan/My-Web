@@ -2,14 +2,15 @@ const content = {
     ko: {
         title: "CNC 밀링 가공 기술자",
         secAbout: "자기소개",
-        aboutText: "안녕하세요, 정밀 가공의 가치를 믿는 CNC 기술자 한바울입니다. \n도면 해독부터 캠 프로그래밍, 기계 및 공구 세팅, 가공 전 공정을 단독으로 수행할 수 있는 숙련도를 갖추고 있습니다. 기능경기대회 수상 이력과 국가기술자격, 그리고 실무 경험을 바탕으로 독일의 선진 제조 현장에 기여하고 싶습니다.",
+        aboutText: "안녕하세요. CNC 밀링 기술자 한바울입니다. \n전국기능경기대회 수상 경력과 실무 경험을 바탕으로 도면 해독부터 CAM 프로그래밍, 공구 세팅, 가공 공정 수립 및 최적화까지 전 공정을 단독 수행할 수 있는 숙련도를 보유하고 있습니다. 현재 독일 IHK-FOSA를 통해 Fachkraft für Metalltechnik(금속 가공 기술자) 자격 인정 절차를 진행 중입니다.",
         secSkills: "핵심 역량",
         skills: [
-            {title: "CNC 가공 및 세팅", desc: "3축/5축 밀링 머신 운용 및 소재별 최적 공구 세팅 능력"},
+            {title: "CNC 가공 및 세팅", desc: "3축 밀링 머신 운용 및 소재 특성에 따른 정밀 공구 세팅 능력"},
             {title: "CAM 프로그래밍", desc: "Mastercam을 활용한 정밀 부품 경로 설계 및 G-code 최적화"},
-            {title: "고속 가공(Dynamic Milling)", desc: "가공 효율 25% 향상 및 공구 수명 40% 연장 노하우 보유"},
-            {title: "정밀 측정 및 품질", desc: "마이크로미터, 버니어 캘리퍼스 등을 활용한 μm 단위 품질 관리"}
-            
+            {title: "고속 가공(Dynamic Milling)", desc: "다이내믹 밀링 기법을 통한 가공 시간 단축 및 공구 수명 극대화"},
+            {title: "정밀 측정 및 품질 관리", desc: "마이크로미터, 2차원 측정기 등을 활용한 정밀 공차 관리(±0.01mm)"},
+            {title: "다양한 소재 가공 전문성", desc: "S45C, AL6061, SUS 계열 및 베이클라이트 등 다양한 특수 소재 가공 경험"},
+            {title: "검증된 기술력", desc: "지방기능경기대회 및 전국기능경기대회 입상을 통해 입증된 실전 가공 기술"}
         ],
         secExp: "경력 및 학력",
         secAwards: "수상 및 자격 (클릭 시 확인)",
@@ -34,15 +35,17 @@ const content = {
         ]
     },
     en: {
-        title: "CNC Milling Technician",
+        title: "CNC Milling Specialist",
         secAbout: "About Me",
-        aboutText: "Hello, I am Baul Han, a dedicated CNC specialist passionate about precision manufacturing. \nI am proficient in the entire production process, including drawing interpretation, CAM programming, and machine setup. With professional certifications and high-precision industry experience, I am eager to bring my expertise to the German manufacturing sector.",
+        aboutText: "Hello, I am Baul Han, a CNC Milling Specialist. \nBased on my awards in National Skills Competitions and practical field experience, I possess the proficiency to independently manage the entire machining process—from blueprint analysis and CAM programming to tool setting and process optimization. I am currently undergoing the recognition process for 'Fachkraft für Metalltechnik' through IHK-FOSA.",
         secSkills: "Core Competencies",
         skills: [
-            {title: "CNC Machining & Setup", desc: "Operation of 3-axis milling machines and material-specific tool setup."},
-            {title: "CAM Programming", desc: "Precision path planning and G-code optimization using Mastercam."},
-            {title: "Dynamic Milling", desc: "Improving efficiency by 25% and extending tool life by 40%."},
-            {title: "Precision Measurement", desc: "Quality control in the μm range using micrometers and calipers."}
+            {title: "CNC Machining & Setup", desc: "Expertise in 3-axis milling machine operation and precision tool setup tailored to material properties."},
+            {title: "CAM Programming", desc: "Precision part path design and G-code optimization using Mastercam."},
+            {title: "Dynamic Milling", desc: "Optimizing cycle times and maximizing tool life through high-speed dynamic milling techniques."},
+            {title: "Precision Measurement & Quality", desc: "Quality control of tight tolerances (within ±0.01mm) using micrometers and 2D measuring instruments."},
+            {title: "Material Expertise", desc: "Extensive experience in machining various materials including S45C, AL6061, SUS series, and Bakelite."},
+            {title: "Proven Technical Excellence", desc: "Practical machining skills verified through awards in Provincial and National Skills Competitions."}
         ],
         secExp: "Experience & Education",
         secAwards: "Awards & Certificates (Click to view)",
@@ -67,15 +70,17 @@ const content = {
         ]
     },
     de: {
-        title: "Zerspanungsmechaniker (Frästechnik)",
+    title: "CNC-Frässpezialist",
         secAbout: "Über mich",
-        aboutText: "Guten Tag, ich bin Baul Han, ein leidenschaftlicher Zerspanungsmechaniker mit Fokus auf Präzision. \nIch beherrsche den gesamten Fertigungsprozess – von der Zeichnungslesung über die CAM-Programmierung bis hin zum Einrichten der Maschinen. Mit meinen staatlichen Zertifikaten und Erfahrungen aus Berufswettbewerben möchte ich mein Können in die deutsche Industrie einbringen.",
+        aboutText: "Guten Tag, ich bin Baul Han, ein spezialisierter CNC-Fräser. \nAuf Grundlage meiner Erfolge bei nationalen Fertigkeitswettbewerben und praktischer Berufserfahrung beherrsche ich den gesamten Fertigungsprozess eigenständig – von der Zeichnungsanalyse über CAM-Programmierung bis hin zur Werkzeugeinstellung und Prozessoptimierung. Derzeit befinde ich mich im Anerkennungsverfahren zur Fachkraft für Metalltechnik (FR Zerspanungstechnik) bei der IHK-FOSA.",
         secSkills: "Kernkompetenzen",
         skills: [
-            {title: "CNC-Bearbeitung & Setup", desc: "Bedienung von 3-Achs-Fräsmaschinen und werkstoffspezifisches Setup."},
-            {title: "CAM-Programmierung", desc: "Präzisionsbahnplanung und G-Code-Optimierung mit Mastercam."},
-            {title: "Dynamic Milling", desc: "Steigerung der Effizienz um 25% und Verlängerung der Werkzeugstandzeit um 40%."},
-            {title: "Präzisionsmesstechnik", desc: "Qualitätskontrolle im μm-Bereich mit Mikrometern und Messschiebern."}
+            {title: "CNC-Bearbeitung", desc: "Präzises Rüsten und Bedienen von 3-Achsen-Fräsmaschinen."},
+            {title: "CAM-Programmierung", desc: "Bahnplanung und G-Code-Optimierung mit Mastercam."},
+            {title: "HSC-Bearbeitung", desc: "Optimierung von Taktzeiten durch Dynamic Milling-Verfahren."},
+            {title: "Qualitätssicherung", desc: "Maßhaltigkeit (±0.01mm) mit Mikrometer und 2D-Messgeräten."},
+            {title: "Werkstoffexpertise", desc: "Erfahrung mit S45C, AL6061, Edelstahl und Bakelit."},
+            {title: "Nachgewiesene Expertise", desc: "Erfolge bei regionalen und nationalen Wettbewerben."}
         ],
         secExp: "Berufserfahrung & Ausbildung",
         secAwards: "Auszeichnungen & Zertifikate",
