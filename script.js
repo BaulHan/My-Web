@@ -1,6 +1,7 @@
+/* 다국어 텍스트 및 수상내역 데이터 관리 객체 (각 수상내역당 이미지 2개 할당) */
 const content = {
     ko: {
-        title: "CNC 밀링 가공 기술자",
+        title: "CNC 밀링 가공 전문가\n(전국기능경기대회 입상자)",
         secAbout: "자기소개",
         aboutText: "안녕하세요. CNC 밀링 기술자 한바울입니다. \n전국기능경기대회 수상 경력과 실무 경험을 바탕으로 도면 해독부터 CAM 프로그래밍, 공구 세팅, 가공 공정 수립 및 최적화까지 전 공정을 단독 수행할 수 있는 숙련도를 보유하고 있습니다. 현재 독일 IHK-FOSA를 통해 Fachkraft für Metalltechnik(금속 가공 기술자) 자격 인정 절차를 진행 중입니다.",
         secSkills: "핵심 역량",
@@ -23,19 +24,21 @@ const content = {
             {date: "2023.04 - 2023.07", title: "GcodeTech", desc: "의료기기 및 로봇 부품 가공"},
             {date: "2020.03 - 2022.12", title: "수원공업고등학교", desc: "스마트기계과 졸업 (기능반)"}
         ],
+        // awards: [
+        //     {t: "컴퓨터응용가공 산업기사", imgs: ["cert_industrial.jpg", "cert_industrial_back.jpg"]}, // 사진 2장
+        //     {t: "컴퓨터응용밀링 기능사", imgs: ["cert_milling.jpg", "cert_milling_back.jpg"]}, // 사진 2장
+        //     {t: "2022 경기도 지방기능경기대회 은메달", imgs: ["image1/22G.png", "image1/22G_award.png"]}, // 사진 2장
+        //     {t: "2021 경기도 지방기능경기대회 동메달", imgs: ["image1/21G.png", "image1/21G_award.png"]}  // 사진 2장
+        // ]
         awards: [
-            {t: "컴퓨터응용가공 산업기사", img: "cert_industrial.jpg"},
-            {t: "컴퓨터응용밀링 기능사", img: "cert_milling.jpg"},
-            {t: "2022 경기도 지방기능경기대회 은메달", img: "image1/22G.png"},
-            {t: "2021 경기도 지방기능경기대회 동메달", img: "image1/21G.png"},
-            {t: "제57회 전국기능경기대회 장려상", img: "image1/22K.png"},
-            {t: "제56회 전국기능경기대회 장려상", img: "image1/21K.png"},
-            {t: "Mastercam 교육 이수증", img: "image1/Master_Cam.png"},
-            {t: "Sandvik Coromant e-learning 수료증", img: "image1/Sandvik_Coromant.png"}
+            {t: "국가기술자격증", imgs: ["image1/Licence.png"]}, // 사진 2장
+            {t: "경기도 지방기능경기대회 수상", imgs: ["image1/21G.png", "image1/22G.png"]}, // 사진 2장
+            {t: "전국기능경기대회(경기도 대표) 입상", imgs: ["image1/21K.png", "image1/22K.png"]}, // 사진 2장
+            {t: "MasterCam, Sandvik Coromant 교육 수료증", imgs: ["image1/Master_Cam.png", "image1/Sandvik_Coromant.png"]}  // 사진 2장
         ]
     },
     en: {
-        title: "CNC Milling Specialist",
+        title: "CNC Milling Specialist\n(Prize Winner at the National Skills Competition WorldSkills Korea)",
         secAbout: "About Me",
         aboutText: "Hello, I am Baul Han, a CNC Milling Specialist. \nBased on my awards in National Skills Competitions and practical field experience, I possess the proficiency to independently manage the entire machining process—from blueprint analysis and CAM programming to tool setting and process optimization. I am currently undergoing the recognition process for 'Fachkraft für Metalltechnik' through IHK-FOSA.",
         secSkills: "Core Competencies",
@@ -59,26 +62,22 @@ const content = {
             {date: "Mar 2020 - Dec 2022", title: "Suwon Technical High School", desc: "Graduated Dept. of Smart Machinery"}
         ],
         awards: [
-            {t: "Industrial Engineer Computer Aided Manufacturing", img: "cert_industrial.jpg"},
-            {t: "Computer Aided Milling Craftsman", img: "cert_milling.jpg"},
-            {t: "Silver Medal, Provincial Skills Competition (2022)", img: "image1/22G.png"},
-            {t: "Bronze Medal, Provincial Skills Competition (2021)", img: "image1/21G.png"},
-            {t: "Medallion for Excellence, National Skills (57th)", img: "image1/22K.png"},
-            {t: "Medallion for Excellence, National Skills (56th)", img: "image1/21K.png"},
-            {t: "Mastercam Training Certificate", img: "image1/Master_Cam.png"},
-            {t: "Sandvik Coromant E-learning Certificate", img: "image1/Sandvik_Coromant.png"}
+            {t: "National Technical Qualification Certificate", imgs: ["image1/Licence.png"]}, // 사진 2장
+            {t: "Awarded at the Gyeonggi-do Provincial Skills Competition", imgs: ["image1/21G.png", "image1/22G.png"]}, // 사진 2장
+            {t: "Prize Winner at the National Skills Competition (WorldSkills Korea, Gyeonggi-do Representative)", imgs: ["image1/21K.png", "image1/22K.png"]}, // 사진 2장
+            {t: "Certificate of Completion: MasterCam & Sandvik Coromant Training", imgs: ["image1/Master_Cam.png", "image1/Sandvik_Coromant.png"]}  // 사진 2장
         ]
     },
     de: {
-    title: "CNC-Frässpezialist",
+        title: "CNC-Frässpezialist\n(Preisträger beim Nationalen Berufswettbewerb WorldSkills Korea)",
         secAbout: "Über mich",
-        aboutText: "Guten Tag, ich bin Baul Han, ein spezialisierter CNC-Fräser. \nAuf Grundlage meiner Erfolge bei nationalen Fertigkeitswettbewerben und praktischer Berufserfahrung beherrsche ich den gesamten Fertigungsprozess eigenständig – von der Zeichnungsanalyse über CAM-Programmierung bis hin zur Werkzeugeinstellung und Prozessoptimierung. Derzeit befinde ich mich im Anerkennungsverfahren zur Fachkraft für Metalltechnik (FR Zerspanungstechnik) bei der IHK-FOSA.",
+        aboutText: "Guten Tag, ich bin Baul Han, ein spezialisierter CNC-Fräser. \nAuf Grundlage meiner Erfolge bei nationalen Fertigkeitswettbewerben und praktischer Beruf서fahrung beherrsche ich den gesamten Fertigungsprozess eigenständig – von der Zeichnungsanalyse über CAM-Programmierung bis hin zur Werkzeugeinstellung und Prozessoptimierung. Derzeit befinde ich mich im Anerkennungsverfahren zur Fachkraft für Metalltechnik (FR Zerspanungstechnik) bei der IHK-FOSA.",
         secSkills: "Kernkompetenzen",
         skills: [
             {title: "CNC-Bearbeitung", desc: "Präzises Rüsten und Bedienen von 3-Achsen-Fräsmaschinen."},
-            {title: "CAM-\nProgram-\nmierung", desc: "Bahnplanung und G-Code-Optimierung \nmit Mastercam."},
+            {title: "CAM-Programmierung", desc: "Bahnplanung und G-Code-Optimierung mit Mastercam."},
             {title: "HSC-Bearbeitung", desc: "Optimierung von Taktzeiten durch Dynamic Milling-Verfahren."},
-            {title: "Qualitäts-\nsicherung", desc: "Maßhaltigkeit \n(±0.01mm) mit Mikrometer und 2D-Messgeräten."},
+            {title: "Qualitätssicherung", desc: "Maßhaltigkeit (±0.01mm) mit Mikrometer und 2D-Messgeräten."},
             {title: "Werkstoffexpertise", desc: "Erfahrung mit S45C, AL6061, Edelstahl und Bakelit."},
             {title: "Nachgewiesene Expertise", desc: "Erfolge bei regionalen und nationalen Wettbewerben."}
         ],
@@ -94,22 +93,24 @@ const content = {
             {date: "03.2020 - 12.2022", title: "Suwon Technical High School", desc: "Abschluss Smart Machinery"}
         ],
         awards: [
-            {t: "Staatlich geprüfter Techniker (CNC-Fertigung)", img: "cert_industrial.jpg"},
-            {t: "Gesellenbrief (Zerspanungsmechaniker-Fräsen)", img: "cert_milling.jpg"},
-            {t: "Silbermedaille, Regionaler Wettbewerb (2022)", img: "image1/22G.png"},
-            {t: "Bronzemedaille, Regionaler Wettbewerb (2021)", img: "image1/21G.png"},
-            {t: "Diplom, Nationaler Berufswettbewerb (57.)", img: "image1/22K.png"},
-            {t: "Diplom, Nationaler Berufswettbewerb (56.)", img: "image1/21K.png"},
-            {t: "Mastercam Schulungszertifikat", img: "image1/Master_Cam.png"},
-            {t: "Sandvik Coromant E-Learning-Zertifikat", img: "image1/Sandvik_Coromant.png"}
+            {t: "Staatliche technische Zertifikate (HRDK)", imgs: ["image1/Licence.png"]}, // 사진 2장
+            {t: "Auszeichnungen: Regionaler Berufswettbewerb Gyeonggi-do", imgs: ["image1/21G.png", "image1/22G.png"]}, // 사진 2장
+            {t: "Preisträger: Nationaler Berufswettbewerb (WorldSkills Korea Representative)", imgs: ["image1/21K.png", "image1/22K.png"]}, // 사진 2장
+            {t: "Zertifikate: Mastercam & Sandvik Coromant Fortbildung", imgs: ["image1/Master_Cam.png", "image1/Sandvik_Coromant.png"]}  // 사진 2장
         ]
     }
 };
 
+let currentLang = 'de'; // 현재 선택된 언어 추적
+let activeAwardImgs = []; // 현재 팝업에 표시될 이미지 배열
+let currentPhotoIdx = 0; // 현재 팝업 사진 인덱스
+
+/* 언어 전환 함수 */
 function changeLang(lang) {
+    currentLang = lang;
     const data = content[lang];
     
-    // 기본 텍스트 업데이트
+    /* 텍스트 요소들 업데이트 */
     document.getElementById('hero-title').innerText = data.title;
     document.getElementById('sec-about').innerText = data.secAbout;
     document.getElementById('about-text').innerText = data.aboutText;
@@ -119,8 +120,8 @@ function changeLang(lang) {
     document.getElementById('sec-contact').innerText = data.secContact;
     document.getElementById('btn-cv').innerText = data.cv;
 
-    // 핵심 역량(Skills) 섹션 업데이트
-    if (document.getElementById('sec-skills') && document.getElementById('skills-list')) {
+    /* 핵심 역량 동적 생성 */
+    if (document.getElementById('sec-skills')) {
         document.getElementById('sec-skills').innerText = data.secSkills;
         const skillsHTML = data.skills.map(s => `
             <div class="skill-item">
@@ -131,7 +132,7 @@ function changeLang(lang) {
         document.getElementById('skills-list').innerHTML = skillsHTML;
     }
 
-    // 타임라인 업데이트
+    /* 경력 타임라인 동적 생성 */
     const timelineHTML = data.timeline.map(item => `
         <div class="timeline-item">
             <div class="time">${item.date}</div>
@@ -143,9 +144,9 @@ function changeLang(lang) {
     `).join('');
     document.getElementById('timeline-list').innerHTML = timelineHTML;
 
-    // 어워드(자격 및 수상) 업데이트
-    const awardsHTML = data.awards.map(a => `
-        <div class="card" onclick="openModal('${a.img}', '${a.t}')">
+    /* 수상내역 카드 생성 (클릭 시 인덱스 전달) */
+    const awardsHTML = data.awards.map((a, i) => `
+        <div class="card" onclick="openAwardModal(${i})">
             <p style="font-weight:bold; font-size:0.9rem; margin-bottom:5px;">${a.t}</p>
             <small style="color:#f2a900; font-weight:bold;">Click to view <i class="fas fa-search-plus"></i></small>
         </div>
@@ -153,15 +154,40 @@ function changeLang(lang) {
     document.getElementById('awards-grid').innerHTML = awardsHTML;
 }
 
-// 모달 제어 함수
-function openModal(img, text) {
-    const modal = document.getElementById('modal');
-    document.getElementById('modal-img').src = img;
-    document.getElementById('modal-text').innerText = text;
-    modal.style.display = 'flex';
+/* 수상내역 모달 팝업 열기 */
+function openAwardModal(idx) {
+    const award = content[currentLang].awards[idx];
+    activeAwardImgs = award.imgs; // 해당 카드의 이미지 배열 할당
+    currentPhotoIdx = 0; // 첫 번째 사진부터 시작
+    
+    document.getElementById('modal-text').innerText = award.t; // 제목 표시
+    updateModalImg(); // 사진 표시 함수 호출
+    document.getElementById('modal').style.display = 'flex'; // 팝업창 띄우기
 }
 
-// 슬라이더 제어 변수 및 함수
+/* 팝업 내 사진 업데이트 함수 */
+function updateModalImg() {
+    const imgTag = document.getElementById('modal-img');
+    const idxTag = document.getElementById('photo-index');
+    imgTag.src = activeAwardImgs[currentPhotoIdx]; // 사진 주소 변경
+    idxTag.innerText = `${currentPhotoIdx + 1} / ${activeAwardImgs.length}`; // "1 / 2" 형태로 표시
+}
+
+/* 팝업 내 사진 넘기기 (이전/다음) */
+function moveAwardPhoto(step) {
+    currentPhotoIdx += step;
+    /* 배열 범위를 벗어나지 않게 순환 처리 */
+    if (currentPhotoIdx >= activeAwardImgs.length) currentPhotoIdx = 0;
+    if (currentPhotoIdx < 0) currentPhotoIdx = activeAwardImgs.length - 1;
+    updateModalImg();
+}
+
+/* 모달 닫기 함수 */
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+
+/* 포트폴리오 슬라이더 기능 */
 let currentSlide = 0;
 function showSlide(index) {
     const slides = document.querySelectorAll('.slide');
@@ -183,5 +209,5 @@ function showSlide(index) {
 function nextSlide() { showSlide(currentSlide + 1); }
 function prevSlide() { showSlide(currentSlide - 1); }
 
-// 초기 언어 설정 (독일어)
+/* 페이지 최초 로드 시 실행 */
 changeLang('de');
