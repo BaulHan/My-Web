@@ -118,12 +118,32 @@ h2 { color: var(--dark-blue); border-bottom: 2px solid #ddd; padding-bottom: 10p
     .contact-box { width: 90%; }
 }
 
-/* 핵심 역량(Skills) 디자인 */
+/* 핵심 역량(Skills) 디자인 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* 화면이 넓을 때는 3열로, 좁을 때는 1~2열로 자동 조절됨 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+*/
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
     gap: 15px;
-    margin-bottom: 30px;
+}
+
+/* 모바일 화면 (폭이 600px 이하일 때) */
+@media (max-width: 600px) {
+    .skills-grid {
+        /* 한 줄에 2개씩 배치 */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    
+    .skill-card h3 {
+        font-size: 0.9rem; /* 글자 크기를 살짝 줄여서 짤림 방지 */
+    }
 }
 
 .skill-item {
