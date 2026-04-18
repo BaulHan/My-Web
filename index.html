@@ -1,57 +1,28 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baul Han | CNC Specialist</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Baul Han | CNC Specialist</title> <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> </head>
 <body>
     <header>
-        <div class="lang-switch">
-            <button onclick="changeLang('ko')">KR</button>
-            <button onclick="changeLang('en')">EN</button>
-            <button onclick="changeLang('de')">DE</button>
-        </div>
+        <div class="lang-switch"> <button onclick="changeLang('ko')">KR</button> <button onclick="changeLang('en')">EN</button> <button onclick="changeLang('de')">DE</button> </div>
     </header>
 
-    <main class="container">
-        <section class="hero">
-            <h1 id="name">Baul Han</h1>
-            <p id="hero-title">CNC Milling Specialist & Precision Mechanic</p>
+    <main class="container"> <section class="hero"> <h1 id="name">Baul Han</h1> <p id="hero-title">CNC Milling Specialist & Precision Mechanic</p> </section>
+
+        <section class="about-me"> <h2 id="sec-about">About Me</h2> <div class="about-content">
+                <p id="about-text"></p> </div>
         </section>
 
-        <section class="about-me">
-            <h2 id="sec-about">About Me</h2>
-            <div class="about-content">
-                <p id="about-text"></p>
-            </div>
+        <section class="skills"> <h2 id="sec-skills">Core Competencies</h2> <div class="skills-grid" id="skills-list"> </div>
         </section>
 
-        <section class="skills">
-            <h2 id="sec-skills">Core Competencies</h2>
-            <div class="skills-grid" id="skills-list">
-                </div>
+        <section> <h2 id="sec-exp">Experience & Education</h2> <div class="timeline" id="timeline-list"> </div>
         </section>
 
-        <section>
-            <h2 id="sec-exp">Experience & Education</h2>
-            <div class="timeline" id="timeline-list">
-                </div>
+        <section> <h2 id="sec-awards">Awards & Certificates</h2> <div class="grid" id="awards-grid"> </div>
         </section>
 
-        <section>
-            <h2 id="sec-awards">Awards & Certificates</h2>
-            <div class="grid" id="awards-grid">
-                </div>
-        </section>
-
-        <section>
-            <h2 id="sec-gallery">Portfolio Gallery</h2>
-            <div class="slider-container">
-                <div class="slider" id="main-slider">
-                    <div class="slide"><img src="image2/Part1.jpeg" alt="Work 1"></div>
+        <section> <h2 id="sec-gallery">Portfolio Gallery</h2> <div class="slider-container"> <div class="slider" id="main-slider"> <div class="slide"><img src="image2/Part1.jpeg" alt="Work 1"></div>
                     <div class="slide"><img src="image2/Part2.jpeg" alt="Work 2"></div>
                     <div class="slide"><img src="image2/Part3.jpeg" alt="Work 3"></div>
                     <div class="slide"><img src="image2/Part4.jpeg" alt="Work 4"></div>
@@ -67,30 +38,20 @@
                     <div class="slide"><img src="image2/14.jpeg" alt="Work 14"></div>
                     <div class="slide"><img src="image2/15.jpeg" alt="Work 15"></div>
                 </div>
-                <button class="prev" onclick="prevSlide()">&#10094;</button>
-                <button class="next" onclick="nextSlide()">&#10095;</button>
-            </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button> <button class="next" onclick="nextSlide()">&#10095;</button> </div>
             <p id="slide-number" style="text-align:center; margin-top:10px; font-size:0.9rem; color:#666; font-weight:bold;">1 / 15</p>
         </section>
 
-        <section class="contact">
-            <h2 id="sec-contact">Contact</h2>
-            <div class="contact-box">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:han.baul2004@gmail.com">Email Me</a></p>
+        <section class="contact"> <h2 id="sec-contact">Contact</h2> <div class="contact-box"> <p><i class="fas fa-envelope"></i> <a href="mailto:han.baul2004@gmail.com">Email Me</a></p>
                 <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/821071921475">WhatsApp</a></p>
                 <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/baul-han-6965803ab?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">LinkedIn</a></p>
-                <a href="CV/Lebenslauf_Han_Baul.pdf" class="btn-download" id="btn-cv" download>Download CV (PDF)</a>
-            </div>
+                <a href="CV/Lebenslauf_Han_Baul.pdf" class="btn-download" id="btn-cv" download>Download CV (PDF)</a> </div>
         </section>
     </main>
 
-    <div id="modal" class="modal" onclick="this.style.display='none'">
-        <div class="modal-content">
-            <img id="modal-img" src="" alt="Certificate">
-            <p id="modal-text" style="margin-top: 15px; font-weight: bold; font-size: 1.1rem;"></p>
-        </div>
+    <div id="modal" class="modal" onclick="closeModal()"> <div class="modal-content" onclick="event.stopPropagation()"> <span class="close" onclick="closeModal()">&times;</span> <div class="modal-slide-area"> <button class="modal-nav prev" onclick="moveAwardPhoto(-1)">&#10094;</button> <img id="modal-img" src="" alt="Award Photo"> <button class="modal-nav next" onclick="moveAwardPhoto(1)">&#10095;</button> </div>
+            <p id="modal-text"></p> <p id="photo-index" style="color: #fff; font-size: 0.8rem; margin-top: 5px;"></p> </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <script src="script.js"></script> </body>
 </html>
