@@ -76,9 +76,9 @@ const content = {
         secSkills: "Kernkompetenzen",
         skills: [
             {title: "CNC-Bearbeitung", desc: "Präzises Rüsten und Bedienen von 3-Achsen-Fräsmaschinen."},
-            {title: "CAM-Programmierung", desc: "Bahnplanung und G-Code-Optimierung mit Mastercam."},
+            {title: "CAM-\nProgram-\nmierung", desc: "Bahnplanung und G-Code-Optimierung \nmit Mastercam."},
             {title: "HSC-Bearbeitung", desc: "Optimierung von Taktzeiten durch Dynamic Milling-Verfahren."},
-            {title: "Qualitätssicherung", desc: "Maßhaltigkeit (±0.01mm) mit Mikrometer und 2D-Messgeräten."},
+            {title: "Qualitäts-\nsicherung", desc: "Maßhaltigkeit \n(±0.01mm) mit Mikrometer und 2D-Messgeräten."},
             {title: "Werkstoffexpertise", desc: "Erfahrung mit S45C, AL6061, Edelstahl und Bakelit."},
             {title: "Nachgewiesene Expertise", desc: "Erfolge bei regionalen und nationalen Wettbewerben."}
         ],
