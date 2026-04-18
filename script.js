@@ -71,7 +71,7 @@ const content = {
     de: {
         title: "CNC-Frässpezialist\n(Preisträger beim Nationalen Berufswettbewerb WorldSkills Korea)",
         secAbout: "Über mich",
-        aboutText: "Guten Tag, ich bin Baul Han, ein spezialisierter CNC-Fräser. \nAuf Grundlage meiner Erfolge bei nationalen Fertigkeitswettbewerben und praktischer Beruf서fahrung beherrsche ich den gesamten Fertigungsprozess eigenständig – von der Zeichnungsanalyse über CAM-Programmierung bis hin zur Werkzeugeinstellung und Prozessoptimierung. Derzeit befinde ich mich im Anerkennungsverfahren zur Fachkraft für Metalltechnik (FR Zerspanungstechnik) bei der IHK-FOSA.",
+        aboutText: "Guten Tag, ich bin Baul Han, ein spezialisierter CNC-Fräser. \nAuf Grundlage meiner Erfolge bei nationalen Fertigkeitswettbewerben und praktischer Berufserfahrung beherrsche ich den gesamten Fertigungsprozess eigenständig – von der Zeichnungsanalyse über CAM-Programmierung bis hin zur Werkzeugeinstellung und Prozessoptimierung. Derzeit befinde ich mich im Anerkennungsverfahren zur Fachkraft für Metalltechnik (FR Zerspanungstechnik) bei der IHK-FOSA.",
         secSkills: "Kernkompetenzen",
         skills: [
             {title: "CNC-Bearbeitung", desc: "Präzises Rüsten und Bedienen von 3-Achsen-Fräsmaschinen."},
